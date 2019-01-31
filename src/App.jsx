@@ -5,13 +5,13 @@ import {inject, observer} from 'mobx-react';
 import Menu from './components/lib/Menu';
 import './stylesheets/App.scss';
 
-import ConfigStore from "./stores/ConfigStore";
+import PageShell from './components/lib/PageShell';
 
 import Home from "./components/Home";
 import Quotation from "./components/Quotation";
 
-import {Router, Route, Switch, BrowserRouter, withRouter} from 'react-router-dom';
-import {createBrowserHistory} from "history";
+
+import {Route, BrowserRouter} from 'react-router-dom';
 
 class App extends Component {
 
@@ -21,27 +21,20 @@ class App extends Component {
 
     render() {
 
-        const {menuOpened} = this.props.ConfigStore;
-
-        const MenuOpened = observer(({ menuOpened }) => <Menu open={menuOpened} />);
-
-        let history = this.props.Navigator.history || createBrowserHistory();
-
-
         return (
             <div className="full-wrapper">
 
-                <MenuOpened/>
+                <Menu open={this.props.ConfigStore.menuOpened}/>
 
                 <div className={"App"}>
-                    {/*<Home/>*/}
-                    {/*<Quotation/>*/}
-                    <Router history={history}>
-                        <div>
-                            <Route exact path='/home' component={Home}/>
-                            <Route path='/quotation' component={Quotation}/>
+                    <BrowserRouter>
+                        <div className={"main"}>
+                            <Route exact path='/' component={PageShell(Home)}/>
+                            <Route path='/home' component={PageShell(Home)}/>
+                            <Route path='/quotation' component={PageShell(Quotation)}/>
+                            <Route path='*' component={Menu}/>
                         </div>
-                    </Router>
+                    </BrowserRouter>
                 </div>
 
             </div>
@@ -51,4 +44,4 @@ class App extends Component {
 }
 
 const Appx = observer(App);
-export default inject('ConfigStore', 'AuthStore', 'Navigator')(Appx);
+export default inject('AuthStore', 'ConfigStore')(Appx);

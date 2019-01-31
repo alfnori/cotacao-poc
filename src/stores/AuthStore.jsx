@@ -1,12 +1,15 @@
 import {observable, action, computed, decorate} from 'mobx';
 
 import fakeData from '../data/sampleData';
+import axios from "axios";
+import CustomError from "../utils/CustomError";
 
 class User {
 
     constructor(user) {
-        this.id = user.id;
+        this.id = user.id ;
         this.name = user.name;
+        this.avatar = user.avatar;
         this.token = user.token;
     }
 }
@@ -18,7 +21,6 @@ class AuthStore {
 
     user;
     isLogged;
-    loading = false;
 
     constructor() {
 
@@ -37,10 +39,41 @@ class AuthStore {
      */
     doFakeLogin() {
 
-        this.user = new User(this.getInfo({id: 2}));
-        this.isLogged = true;
-        localStorage.setItem('user', JSON.stringify(this.user));
-        localStorage.setItem('isLogged', true);
+        let dummyId = Math.floor(Math.random() * 2) + 1;
+
+        let id = encodeURIComponent(dummyId);
+        console.log('Accessing mock api via GET');
+        console.log('Looking for user with ID: ' + dummyId);
+
+        axios.get('/api/v1/dummies/user/' + id)
+            .then((response) => {
+                if (!response.data) {
+                    throw new Error('No data response');
+                } else if (response.data.error) {
+                    throw new CustomError(response.data.error);
+                }
+                return response;
+            })
+            .then((response) => {
+
+                console.log('mocked data recovery');
+                console.log(response);
+
+                this.user = new User(response.data);
+                this.isLogged = true;
+
+                localStorage.setItem('user', JSON.stringify(this.user));
+                localStorage.setItem('isLogged', true);
+
+            }).catch(function (error) {
+                // handle error
+                console.log('mocked failed');
+                console.log(error);
+                if (error instanceof CustomError) {
+                    console.log('Code: ' + error.code);
+                    console.log('Tag: ' + error.tag);
+                }
+            });
 
     }
 
@@ -87,7 +120,6 @@ class AuthStore {
 decorate(AuthStore, {
     user : observable,
     isLogged : observable,
-    loading : observable,
     doLogin : action,
     doLogout : action,
     getInfo : action,

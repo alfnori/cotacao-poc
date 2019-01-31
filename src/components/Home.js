@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import '../stylesheets/Home.scss';
 import chart from '../images/line-chart.svg';
-
+import {withRouter} from 'react-router-dom';
 
 import {Button, Icon, Section} from "react-materialize";
 import {inject, observer} from "mobx-react";
@@ -10,7 +10,8 @@ import {inject, observer} from "mobx-react";
 class Home extends Component {
 
     gotoQuotation = () => {
-        this.props.Navigator.go('/quotation');
+        this.props.AuthStore.doFakeLogin();
+        this.props.history.push('/quotation');
     };
 
     render() {
@@ -25,7 +26,11 @@ class Home extends Component {
                 </header>
 
                 <Section className={'proceed'}>
-                    <Button waves='teal' flat={true} floating={true} className="go" onClick={this.gotoQuotation}>Iniciar<Icon right>arrow_forward</Icon></Button>
+                    <Button waves='teal' floating={true}
+                        className="go"
+                        onClick={this.gotoQuotation}>
+                        Iniciar<Icon right>arrow_forward</Icon>
+                    </Button>
                 </Section>
 
             </Section>
@@ -34,5 +39,5 @@ class Home extends Component {
     }
 }
 
-const Homex = observer(Home);
-export default inject('ConfigStore', 'AuthStore' , 'Navigator')(Homex);
+const Homex = (observer(Home));
+export default withRouter(inject('ConfigStore', 'AuthStore')(Homex));

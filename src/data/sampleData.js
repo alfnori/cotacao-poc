@@ -1,3 +1,7 @@
+import authAv from '../images/authAvatar.jpeg';
+import authAv2 from '../images/authAvatar2.jpg';
+
+
 const sampleData = {
 
     companies : [
@@ -22,11 +26,13 @@ const sampleData = {
         {
             id: 1,
             name: "Tester",
+            avatar: authAv,
             token: "23456780"
         },
         {
             id: 2,
             name: "Developer",
+            avatar: authAv2,
             token: "23456789"
         }
     ],

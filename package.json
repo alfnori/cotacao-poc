@@ -39,6 +39,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "history": "^4.7.2",
+    "jquery": "^3.3.1",
     "lodash": "^4.17.11",
     "mobx": "^5.9.0",
     "mobx-react": "^5.4.3",

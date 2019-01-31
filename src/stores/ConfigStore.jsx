@@ -12,7 +12,6 @@ class ConfigStore {
     
     menuOpened = false;
     animationType = 'fade';
-    urlReferrer = '/';
 
     closeMenu = () => {
         this.menuOpened = false;

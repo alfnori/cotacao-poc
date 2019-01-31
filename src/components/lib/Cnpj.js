@@ -32,7 +32,7 @@ class Cnpj extends React.Component {
         let valid = refs.isValid() ;
 
         // Dummy test cnpj
-        if (!valid && refs.state.value == '12.345.678/0001-23') {
+        if (!valid && refs.state.value === '12.345.678/0001-23') {
             valid = true;
         }
 

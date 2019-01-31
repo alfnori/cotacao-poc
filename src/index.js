@@ -3,8 +3,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'mobx-react';
-import {Router, withRouter} from 'react-router-dom';
-import {RouterStore} from 'mobx-react-router';
+import {BrowserRouter, withRouter} from 'react-router-dom';
 
 import './stylesheets/index.css';
 import * as serviceWorker from './serviceWorker';
@@ -15,17 +14,16 @@ import App from './App';
 
 //Stores
 import AuthStore    from './stores/AuthStore';
-import CompanyStore from './stores/CompanyStore';
-import QuotationStore from './stores/QuotationStore';
+import CompanyStorex from './stores/CompanyStore';
+import QuotationStorex from './stores/QuotationStore';
 import ConfigStore from './stores/ConfigStore';
-import {createBrowserHistory} from "history";
 
-// Rotas
-const Navigator = new RouterStore();
+// Init store
+let CompanyStore = new CompanyStorex(AuthStore);
+let QuotationStore = new QuotationStorex(AuthStore);
 
 // Stores
 const stores = {
-    Navigator,
     AuthStore,
     ConfigStore,
     CompanyStore,
@@ -33,14 +31,13 @@ const stores = {
 };
 
 const AppBlock = withRouter(App);
-let history = Navigator.history || createBrowserHistory();
 
 ReactDOM.render(
 
     <Provider {...stores}>
-        <Router history={history}>
+        <BrowserRouter>
             <AppBlock/>
-        </Router>
+        </BrowserRouter>
     </Provider>
     ,
     document.getElementById('root')

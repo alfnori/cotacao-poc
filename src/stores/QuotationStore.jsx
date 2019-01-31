@@ -3,6 +3,12 @@ import fakeData from '../data/sampleData';
 
 class QuotationStore {
 
+    userStore;
+
+    constructor(userStore) {
+        this.userStore = userStore;
+    }
+
     searched = null;
     searchedAll = [];
 
@@ -44,4 +50,4 @@ decorate(QuotationStore, {
     searchAll: action
 });
 
-export default new QuotationStore();
+export default QuotationStore;
