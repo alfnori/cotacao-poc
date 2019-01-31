@@ -1,0 +1,244 @@
+@function get-vw($target) {
+  $vw-context: (1000*.01) * 1px;
+  @return ($target/$vw-context) * 1vw;
+}
+
+@mixin linearGradient($top, $bottom){
+  background: $top; /* Old browsers */
+  background: -moz-linear-gradient(top,  $top 0%, $bottom 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  $top 0%,$bottom 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  $top 0%,$bottom 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  $top 0%,$bottom 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+// Fontes
+@font-face {
+  font-family: 'Avenir';
+  src:    url('../fonts/Avenir-Light.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/Avenir-Light.woff') format('woff'),
+          url('../fonts/Avenir-Light.ttf') format('truetype');
+  font-weight: 100;
+}
+
+
+@font-face {
+  font-family: 'Avenir Medium';
+  src:  url('../fonts/Avenir-Medium.ttf') format('truetype'),
+        url('../fonts/Avenir-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir-Medium.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Black';
+  src:  url('../fonts/Avenir-Black.ttf') format('truetype'),
+        url('../fonts/Avenir-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir Book';
+  src:  url('../fonts/Avenir-Book.ttf') format('truetype'),
+        url('../fonts/Avenir-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Avenir-Book.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+// Colors Definition
+$gray: #ccc;
+$lightest-gray: #FAFAFA;
+
+$light-purple: #9181EF;
+$glossy-purple: #A36BF3;
+$glossy-blue: #32CCCC;
+$light-blue: #F1F6F8;
+
+$solid-purple: #924B94;
+$dark-purple: #2C154D;
+$color-active: #A55DB9;
+$color-disable: #936498;
+$default-gradient: linear-gradient(90deg, $glossy-purple 0%, $light-purple 100%);
+$yellow-color: #F4FF00;
+$blue-color: #4081FD;
+$inactive-gray: #6A6867;
+$exclude-red: RGBA(255, 67, 67, 100);
+$default-bg: #0D0D0D;
+$green: green;
+
+// Box
+$xs-gap: 4px;
+$sm-gap: 8px;
+$md-gap: 16px;
+$lg-gap: 32px;
+$xl-gap: 64px;
+$full-width: 100vw;
+$full-height: 100vh;
+$form-element-max-width: 320px;
+$gap-top: 60px;
+// Default Font
+$default-font: 'Avenir', sans-serif;
+$font-size: 14px;
+
+.avenir-black {
+  font-family: $default-font !important;
+  font-weight: 900 !important;
+}
+
+.avenir-medium {
+  font-family: $default-font !important;
+  font-weight: 600 !important;
+}
+
+.avenir-light {
+  font-family: $default-font !important;
+  font-weight: 100 !important;
+}
+
+.avenir-book {
+  font-family: $default-font !important;
+  font-weight: 300 !important;
+}
+
+//miixins and extends
+//botao x para limpar o input
+.clear-element {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  color: RGBA(255, 255, 255, 0.1);
+  cursor: pointer;
+  width: 35px;
+  height: 100%;
+  max-height: 45px;
+  top: 0;
+  right: 0;
+
+  &:before {
+    font-family: 'Linearicons';
+    content: "\e92a";
+  }
+}
+
+//icone do imput
+.span-icon {
+  flex: 1;
+  min-width: 25px;
+  max-width: 25px;
+  padding-top: 15px;
+  order: 1;
+  color: $yellow-color;
+  transition: 0.3s;
+  font-size: 12px;
+}
+
+//comportamento do input e css base
+/*.emptyIcon{
+    input{
+        min-width: 100%;
+    }   
+
+    .span-icon{
+        display: none;
+    } 
+}*/
+/*error tratament*/
+
+.errorClass {
+  input, textarea {
+    border-color: $blue-color;
+    font-size: 20px;
+    background-color: transparent;
+    color: RGBA(255, 255, 255, 1);
+    & + span {
+      color: $blue-color;
+    }
+  }
+}
+
+.element-comportamento {
+  flex: 1;
+  max-width: calc(100% - 25px);
+  min-width: calc(100% - 25px);
+  width: 100%;
+  margin-top: 0 !important;
+  padding: 0 40px 0 20px;
+  background-color: RGBA(255, 255, 255, 0.05);
+  border: none;
+  border-left: 1px solid $yellow-color;
+  font-size: 15px;
+  order: 2;
+  transition: 0.3s;
+  color: RGBA(255, 255, 255, 0.4);
+  font-weight: 300;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  &:focus {
+    border-color: $blue-color;
+    font-size: 20px;
+    background-color: transparent;
+    color: RGBA(255, 255, 255, 1);
+    & + span {
+      color: $blue-color;
+    }
+  }
+
+  &:disabled {
+    font-size: 20px;
+  }
+
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+}
+
+/*list show dos inputs autocomplete*/
+.autocomplete-item-select {
+  margin-left: 25px;
+}
+
+//ul resets
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+//set icons empty and input full width
+.emptyIcon {
+  input, textarea {
+    min-width: 100%;
+  }
+  .span-icon {
+    display: none;
+  }
+}
+
+.error-return {
+  font-family: $default-font;
+  font-size: 10px;
+  color: #FF4343;
+  position: absolute;
+  left: 45px;
+  bottom: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+@mixin flexcol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

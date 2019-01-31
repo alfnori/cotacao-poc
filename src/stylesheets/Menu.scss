@@ -1,0 +1,144 @@
+@import 'theme';
+
+.Menu {
+
+  font-family: $default-font;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  width: 100vw;
+  overflow: hidden;
+  height: 100vh;
+
+  -webkit-transition: transform .25s;
+  -moz-transition: transform .25s;
+  -ms-transition: transform .25s;
+  -o-transition: transform .25s;
+  transition: transform .25s;
+
+  -webkit-transform: translate3D(-100vw, 0, 0);
+  -moz-transform: translate3D(-100vw, 0, 0);
+  -ms-transform: translate3D(-100vw, 0, 0);
+  -o-transform: translate3D(-100vw, 0, 0);
+  transform: translate3D(-100vw, 0, 0);
+
+  .picture-container {
+    z-index: 2;
+  }
+
+  .bg-cover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+  }
+
+  .bg-overlay {
+    opacity: 0.9;
+    z-index: -1;
+    position: fixed;
+    width: 100vw;
+    height: 1000px;
+    background-color: $default-bg;
+  }
+
+  .content {
+    z-index: 1;
+  }
+
+  &.open {
+    -webkit-transform: translate3D(0, 0, 0);
+    -moz-transform: translate3D(0, 0, 0);
+    -ms-transform: translate3D(0, 0, 0);
+    -o-transform: translate3D(0, 0, 0);
+    transform: translate3D(0, 0, 0);
+  }
+
+  .close-button {
+    position: absolute;
+    right: 0;
+    top:0;
+    padding: 20px;
+  }
+
+  .profile {
+    padding: 6vh 0 4vh;
+    width: 100%;
+    text-align: center;
+
+    .UserPicture {
+      margin-bottom: 10px;
+    }
+
+    .fullname {
+      padding: 10px 0;
+      font-family: $default-font;
+      font-weight: 100;
+      color: white;
+      font-size: 20px;
+
+      .city {
+        color: $inactive-gray;
+        line-height: 40px;
+        font-size: 15px!important;
+      }
+    }
+  }
+
+  .items {
+    clear: both;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0 40px;
+    }
+
+    li {
+      font-size:14px;
+      padding:18px 0 20px 0;
+      height: 70px;
+      line-height: 35px;
+      color: white;
+      font-weight: normal!important;
+      background: url(../images/ic-chevron-right-gray.svg);
+      background-position: calc(100% - 30px) center;
+      background-repeat: no-repeat;
+      background-size: 10px 10px;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+
+    li:last-child {
+
+    }
+
+    .background-menu {
+      background-repeat: no-repeat;
+      background-position: 20px center;
+    }
+
+    .configuracoes-ico {
+      @extend .background-menu;
+    }
+
+    .sobre-ico {
+      @extend .background-menu;
+    }
+
+  }
+
+}

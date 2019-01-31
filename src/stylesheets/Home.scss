@@ -1,0 +1,61 @@
+@import 'theme';
+
+
+.Home {
+  text-align: center;
+  @include flexcol;
+  height: 100%;
+}
+
+.Home-header {
+
+  min-height: 80vh;
+  font-size: calc(9px + 1vmin) !important;
+  color: white;
+  padding: 20px 0;
+
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-end;
+
+  h3 {
+    font-size: 1.6em;
+    font-weight: bold;
+  }
+
+}
+
+.Home-chart {
+  height: 4vmax;
+}
+
+.Home .section {
+
+  &.proceed {
+
+    width: 100%;
+
+    .btn {
+      color: $glossy-purple;
+      background-color: white;
+      height: 11vmax;
+      width: 80%;
+      max-width: 400px;
+      max-height: 100px;
+      text-align: left;
+    }
+
+    .btn-floating {
+      border-radius: 0;
+
+      i {
+        width: auto !important;
+        color: $glossy-purple;
+      }
+
+    }
+
+  }
+
+}
+

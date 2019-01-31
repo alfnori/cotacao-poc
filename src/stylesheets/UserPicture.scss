@@ -1,0 +1,60 @@
+@import 'theme';
+
+.UserPicture{
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+    &.disabled {
+      pointer-events: none;
+      .text {
+        display: none;
+      }
+
+      input {
+        display: none;
+      }
+    }
+
+	.picture-container{
+  		flex: 1;
+		max-width: 100px;
+		height: 100px;
+		border-radius: 100%;
+		overflow: hidden;
+		position: relative;
+		border: 1px solid $inactive-gray;
+		background-position: center center;
+		background-size: cover;
+		input{
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			opacity: 0;
+			z-index: 2;
+			display: block;
+			position: absolute;
+			&:hover{
+				cursor: pointer;
+				opacity: 0;
+			}
+		}
+		.user-photo{
+			border: none;
+			vertical-align: top;
+		}
+		.text{
+			width: 100%;
+			text-align: center;
+			color: #fff;
+			bottom: 0;
+			position: absolute;
+			background-color: rgba(0,0,0,0.3);
+			padding: 10px 0;
+			font-weight: 100;
+			font-size: 10px;
+		}
+	}
+}
+

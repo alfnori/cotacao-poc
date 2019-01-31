@@ -1,0 +1,188 @@
+@import 'theme';
+
+
+.Quotation {
+
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-between;
+  padding: 0;
+
+  background-color: $light-blue;
+  color: black;
+  height: 100vh;
+
+  input {
+    color: black;
+  }
+}
+
+.Quotation-header {
+
+  background: $default-gradient;
+  width: 100%;
+  height: 15vh;
+
+  min-height: 15vh;
+  font-size: calc(6px + 1vmin) !important;
+  padding: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  .Quotation-chart {
+    height: 4vh;
+    max-height: 4vmax;
+  }
+
+  .mixer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 420px;
+  }
+
+  h3 {
+    font-size: 1.7em;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.2em;
+    margin: 0;
+  }
+
+  .section {
+
+    display: inline-block;
+    width: 10vw;
+    color: white;
+
+    &.chart {
+      max-width: 48px;
+    }
+
+    &.describe {
+      width: calc(75% - 48px)
+    }
+
+    &.menu {
+      width: 48px;
+    }
+
+    .picture-container {
+      max-width: 48px;
+      height: 48px;
+    }
+  }
+
+}
+
+.Quotation-chart {
+  height: 2vmax;
+}
+
+.Quotation .section {
+
+  &.search {
+
+    height: calc(100% - 20vh);
+    margin: 0;
+    padding: 0;
+
+    .section {
+      height: 12vh;
+    }
+
+    .describe {
+
+      font-size: 1.2em;
+      font-weight: 200;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+
+      padding: 0;
+      margin: 0;
+      height: 12vh;
+
+      span {
+        display: flex;
+        i {
+          margin-right: 5px;
+        }
+      }
+
+    }
+
+    .input {
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1vh 8vh;
+      background: white;
+      text-align: center;
+
+      p {
+        margin: 0px;
+        margin-right: 40px;
+        padding: 0;
+        color: $inactive-gray;
+        width: calc(100% - 40px);
+        max-width: 380px;
+        display: flex;
+      }
+      input {
+        border-bottom: none;
+        margin: 0;
+        padding: 0;
+        font-size: 1.1em;
+        font-weight: bold;
+        width: calc(100% - 40px);
+        max-width: 380px;
+      }
+
+    }
+
+  }
+
+  &.proceed {
+
+    width: 100%;
+    height: 20vh;
+
+    .btn {
+      color: white;
+      background-color: $glossy-blue;
+      height: 11vmax;
+      width: 80%;
+      max-width: 400px;
+      max-height: 100px;
+      text-align: left;
+    }
+
+    .btn-floating {
+      border-radius: 0;
+
+      i {
+        width: auto !important;
+        color: white;
+      }
+
+    }
+
+  }
+
+}
+
