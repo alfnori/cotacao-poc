@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { shape } from 'prop-types';
 
 // setup file
-import {configure, shallow, mount, render} from 'enzyme';
+import {configure, shallow, mount, render} from './Enzyme';
 
 // Instantiate router context
 const router = {

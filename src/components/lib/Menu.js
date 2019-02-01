@@ -15,6 +15,7 @@ class Menu extends React.Component {
     gotoUrl = (url) => {
         this.props.history.push(url);
         this.props.ConfigStore.animationType = AnimationType.TO_LEFT;
+        this.props.ConfigStore.urlTo = url;
         this.props.ConfigStore.closeMenu();
     };
 

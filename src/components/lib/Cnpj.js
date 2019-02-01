@@ -95,8 +95,8 @@ class Cnpj extends React.Component {
             <Row className={'cnpj ' + (this.state.value ? '' : 'empty')}>
                 {
                     this.state.isValid ?
-                        <span onClick={this.onClickChecked}><Icon right>check_circle</Icon></span> :
-                        <span onClick={this.onClickUnchecked}><Icon right>remove_circle_outline</Icon></span>
+                        <span className={'CK'} onClick={this.onClickChecked}><Icon right>check_circle</Icon></span> :
+                        <span className={'UCK'} onClick={this.onClickUnchecked}><Icon right>remove_circle_outline</Icon></span>
                 }
                 <TextInputMask
                     ref={'maskedInputCNPJ'}

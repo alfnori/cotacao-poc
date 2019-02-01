@@ -5,11 +5,11 @@ export default class myButton extends Component {
 
     handleButton(e) {
         this.props.onClick(e);
-    }
+    };
 
     defaultButton = () => {
         return <Icon>help_outline</Icon>;
-    }
+    };
 
     render() {
 

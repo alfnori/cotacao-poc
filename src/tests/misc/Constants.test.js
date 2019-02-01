@@ -1,5 +1,5 @@
 import React from 'react';
-import * as constantsAPI from '../data/constants';
+import * as constantsAPI from '../../data/constants';
 
 
 console.log(constantsAPI);

@@ -1,7 +1,7 @@
 import React from 'react';
-import * as m from '../data/mockAPI';
-import AuthStore from "../stores/AuthStore";
-import CompanyStore from "../stores/CompanyStore";
+import * as m from '../../data/mockAPI';
+import AuthStore from "../../stores/AuthStore";
+import CompanyStore from "../../stores/CompanyStore";
 
 
 describe('Mock API', () => {

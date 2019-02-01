@@ -1,4 +1,4 @@
-import {observe, configure, spy} from 'mobx';
+import {observe, configure} from 'mobx';
 import CompanyStore from '../../stores/CompanyStore';
 import axios from 'axios';
 import _ from 'lodash';
