@@ -22,13 +22,13 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 # Some advice
 
-### Test configuration for Linux:
+## Test configuration for Linux:
 
 If you got some errors about watcher (or like error recursive-readdir/test/testdir/b/b ENOSPC) when running tests try to execute in terminal:
 
 ### `echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p`
 
-### Running jest:
+## Running jest:
 -u updates snaps, --coverage to update % --silent without console.log
 ### `jest -u --coverage --silent`
 
