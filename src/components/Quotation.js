@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
+import ReactTestUtils from 'react-dom/test-utils';
 
-import * as $AB from 'jquery';
 import {inject, observer} from "mobx-react";
 import {withRouter} from 'react-router-dom';
 
-import {Button, Icon, Section, Modal, Table} from "react-materialize";
+import {Button, Icon, Section, Modal, Table, Toast} from "react-materialize";
 import UserPicture from '../components/lib/UserPicture';
 
 import '../stylesheets/Quotation.scss';
@@ -12,6 +12,8 @@ import chart from "../images/line-chart.svg";
 import Cnpj from "./lib/Cnpj";
 
 class Quotation extends Component {
+
+    toastButton;
 
     constructor (props) {
 
@@ -31,7 +33,6 @@ class Quotation extends Component {
 
     openModal = () => {
         window.jQuery("#DummyCompany").modal('open');
-        // document.getElementById("#DummyCompany").modal('open');
     };
 
     handleClick = (e) => {
@@ -47,6 +48,8 @@ class Quotation extends Component {
                             instance.openModal();
                         }, 200);
 
+                    } else {
+                        ReactTestUtils.Simulate.click(instance.toastButton);
                     }
                 });
         } else {
@@ -63,10 +66,6 @@ class Quotation extends Component {
     };
 
     render() {
-
-        let divStyle = {
-            'display' : 'none'
-        }
 
         return (
 
@@ -135,6 +134,8 @@ class Quotation extends Component {
                             </Table> : <span>dummy</span>
                     }
                 </Modal>
+
+                <Toast toast="Empresa não encontrada!" className="vanish"><span ref={(node) => this.toastButton = node}>Toast</span></Toast>
 
             </Section>
 

@@ -126,4 +126,4 @@ decorate(AuthStore, {
     checkAuth : computed
 });
 
-export default new AuthStore();
+export default AuthStore;

@@ -15,11 +15,11 @@ class ConfigStore {
 
     closeMenu = () => {
         this.menuOpened = false;
-    }
+    };
 
     openMenu = () => {
         this.menuOpened = true;
-    }
+    };
 }
 
 decorate(ConfigStore, {
@@ -30,4 +30,4 @@ decorate(ConfigStore, {
     openMenu : action
 });
 
-export default new ConfigStore();
+export default ConfigStore;

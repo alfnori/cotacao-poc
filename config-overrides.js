@@ -1,9 +1,9 @@
+
 module.exports = function override(config, env) {
     //do stuff with the webpack config...
     console.log(config);
     config.devServer = {
         historyApiFallback: true,
     };
-    console.log(config);
     return config;
 }

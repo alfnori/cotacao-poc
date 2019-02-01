@@ -79,3 +79,7 @@ code {
 .modal .modal-content {
     padding: 15px;
 }
+
+.vanish {
+    display: none !important;
+}
