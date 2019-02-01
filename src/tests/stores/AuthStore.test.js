@@ -80,7 +80,7 @@ describe('AuthStore', () => {
       it('Do a fake login and get user', () => {
         AuthStorex = new AuthStore();
         AuthStorex.doFakeLogin();
-        expect(axios.get).toHaveBeenCalledWith('/api/v1/dummies/user/' + AuthStorex.dummyId);
+        expect(axios.get).toHaveBeenCalledWith('/api/v1/dummies/user/' + AuthStorex.idUser);
       });
 
       describe('when fetch is successful', () => {

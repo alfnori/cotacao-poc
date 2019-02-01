@@ -19,7 +19,7 @@ class User {
  */
 class AuthStore {
 
-    dummyId = null;
+    idUser = null;
     user = null;
     isLogged;
 
@@ -35,7 +35,7 @@ class AuthStore {
 
     dummyId = () => {
         let id = Math.floor(Math.random() * 2) + 1;
-        this.dummyId = id;
+        this.idUser = id;
         return id;
     };
 
@@ -59,7 +59,7 @@ class AuthStore {
 
         await axios.get('/api/v1/dummies/user/' + id)
             .then((response) => {
-                if (!response.data || !response.data.id && !response.data.error) {
+                if (!response.data || (!response.data.id && !response.data.error)) {
                     throw new Error('No data response');
                 } else if (response.data.error) {
                     throw new CustomError(response.data.error);

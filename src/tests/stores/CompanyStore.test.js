@@ -23,6 +23,15 @@ describe('CompanyStore', () => {
 
   });
 
+  it('fetchs dummy data', () => {
+    CompanyStorex = new CompanyStore();
+    let cp = CompanyStorex.getInfo({id: 2});
+    expect(cp).not.toBe(null);
+    expect(cp.name).toBe('Empresa Fake 2');
+    let quote2 = CompanyStorex.getInfo({name: 'xyz'});
+    expect(quote2).toBe(null);
+  });
+
   it('makes company observable', () => {
 
     CompanyStorex = new CompanyStore();

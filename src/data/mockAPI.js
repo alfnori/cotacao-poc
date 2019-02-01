@@ -1,10 +1,10 @@
 import fakeData from "./sampleData";
 import {SERVER_ERROR, USER_TOKEN_NOT_FOUND, USER_NOT_FOUND, COMPANY_NOT_FOUND} from './constants';
-import {Server, Faker} from 'react-mock';
+import {Server} from 'react-mock';
 
 const endPoint = '/api/v1/dummies/';
 
-const dummyError = (tag, msg, code)  => {
+export const dummyError = (tag, msg, code)  => {
   return {
       error: {
           code: code || 500,
@@ -15,7 +15,7 @@ const dummyError = (tag, msg, code)  => {
 };
 
 // Validates headers and extract token A
-const validateAuthHeaderToken = (headers) => {
+export const validateAuthHeaderToken = (headers) => {
 
     let token;
 
@@ -35,7 +35,7 @@ const validateAuthHeaderToken = (headers) => {
 };
 
 // Assemble mock response
-const assembleResponse = (code, data, headers) => {
+export const assembleResponse = (code, data, headers) => {
 
     console.log('Data before encoding is: ');
     console.log('Code: ' + code + ' and Data is: ');
@@ -50,7 +50,7 @@ const assembleResponse = (code, data, headers) => {
 };
 
 //dummy api busca usuario
-const requestUserGetInfo = (datax) => {
+export const requestUserGetInfo = (datax) => {
 
     let dummyUser = null;
 
@@ -82,7 +82,7 @@ const requestUserGetInfo = (datax) => {
 };
 
 //dummy api busca de empresa
-const requestQuoteSearch = (datax) => {
+export const requestQuoteSearch = (datax) => {
 
     let response;
 
@@ -140,22 +140,9 @@ const requestQuoteSearch = (datax) => {
 
 };
 
-// test mock
-const todoSchema = {
-    author: Faker.internet.email(),
-    content: () => Faker.lorem.sentence(),
-    createdAt: () => Faker.date.past()
-}
-
-const requestHandler = (request, generator) => {
-    const todoList = generator.next(10, todoSchema);
-    return [200, { 'Content-Type': 'application/json' }, JSON.stringify(todoList)];
-};
-
 const serveMock = () => {
     Server.mockGet(endPoint + '/user/:id', requestUserGetInfo);
     Server.mockGet(endPoint + '/quote/:cnpj', requestQuoteSearch);
-    Server.mockGet(endPoint + '/test', requestHandler);
     Server.on();
 };
 

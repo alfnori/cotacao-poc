@@ -27,6 +27,21 @@ class CompanyStore {
         return new Company({...params});
     };
 
+    getInfo(data) {
+
+        let dummyCompany = null;
+
+        if (data.id) {
+            dummyCompany = fakeData.companies.find(x => x.id === data.id) || null
+        } else {
+            let filter = data.name || data.cnpj || data;
+            dummyCompany = fakeData.companies.find(x => x.name === filter || x.cnpj === filter) || null
+        }
+
+        return dummyCompany;
+
+    }
+
     async searchOne(datax) {
 
         let instance = this;
@@ -56,8 +71,7 @@ class CompanyStore {
             config
         )
         .then((response) => {
-            console.log('xxxxxxxxxxxxxxxxxxxxxx');console.log(response);
-            if (!response.data || !response.data.id && !response.data.error) {
+            if (!response.data || (!response.data.id && !response.data.error)) {
                 throw new Error('No data response');
             } else if (response.data.error) {
                 throw new CustomError(response.data.error);
@@ -90,7 +104,8 @@ class CompanyStore {
 
 decorate(CompanyStore, {
     company : observable,
-    searchOne: action
+    searchOne: action,
+
 });
 
 export default CompanyStore;
