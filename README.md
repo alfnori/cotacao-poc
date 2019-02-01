@@ -1,8 +1,9 @@
-#Cotação POC
+# Cotação POC - (Tecnologias utilizadas: React, Mobx, Sass, Flexbox, Jest e +)
 
 * Criação das telas conforme proposta do layout. Além do básico, foram adicionados algumas funções extras como animações e transições,
 um menu simples, com login e logout fake, validação do campo de CNPJ, bem como os indicadores de válido ou inválido(remoção),
 além do uso de toast e modal para demonstrar o serviço, que está bem "documentado" via console.
+* Sobre a cobertudo dos testes, a aplicação está 85% coberta. Tive alguma dificuldade e certo problema com bibliotecas que me custarão muito tempo e por este motivo não cobri todos os arquivos.
 * Algumas informaçõe importantes:
   + O avatar do usuário abre um menu simples para navegação e alteração das instâncias. Sair faŕa o logout e
   irá voltar para a Home. Emular sessão irá fazer um login fake entre dois perfis randomicamente. E emular perda de sessão 
