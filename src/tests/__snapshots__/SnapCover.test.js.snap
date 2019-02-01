@@ -1,0 +1,2379 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: App App renders with default props 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <inject-App-with-AuthStore-ConfigStore
+    AuthStore={
+      AuthStore {
+        "createUser": [Function],
+        "dummyId": [Function],
+        "idUser": null,
+        "isLogged": undefined,
+        "user": null,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "AuthStore@1.keys",
+            "observers": Set {},
+          },
+          "name": "AuthStore@1",
+          "target": [Circular],
+          "values": Map {
+            "user" => null,
+            "isLogged" => undefined,
+            "checkAuth" => undefined,
+          },
+        },
+      }
+    }
+    CompanyStore={
+      CompanyStore {
+        "company": null,
+        "createCompany": [Function],
+        "userStore": AuthStore {
+          "createUser": [Function],
+          "dummyId": [Function],
+          "idUser": null,
+          "isLogged": undefined,
+          "user": null,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "AuthStore@1.keys",
+              "observers": Set {},
+            },
+            "name": "AuthStore@1",
+            "target": [Circular],
+            "values": Map {
+              "user" => null,
+              "isLogged" => undefined,
+              "checkAuth" => undefined,
+            },
+          },
+        },
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "CompanyStore@4.keys",
+            "observers": Set {},
+          },
+          "name": "CompanyStore@4",
+          "target": [Circular],
+          "values": Map {
+            "company" => null,
+          },
+        },
+      }
+    }
+    ConfigStore={
+      ConfigStore {
+        "animationType": "fade",
+        "menuOpened": false,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "ConfigStore@3.keys",
+            "observers": Set {},
+          },
+          "name": "ConfigStore@3",
+          "target": [Circular],
+          "values": Map {
+            "menuOpened" => false,
+            "animationType" => "fade",
+          },
+        },
+      }
+    }
+    QuotationStore={
+      QuotationStore {
+        "userStore": AuthStore {
+          "createUser": [Function],
+          "dummyId": [Function],
+          "idUser": null,
+          "isLogged": undefined,
+          "user": null,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "AuthStore@1.keys",
+              "observers": Set {},
+            },
+            "name": "AuthStore@1",
+            "target": [Circular],
+            "values": Map {
+              "user" => null,
+              "isLogged" => undefined,
+              "checkAuth" => undefined,
+            },
+          },
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "AuthStore": AuthStore {
+        "createUser": [Function],
+        "dummyId": [Function],
+        "idUser": null,
+        "isLogged": undefined,
+        "user": null,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "AuthStore@1.keys",
+            "observers": Set {},
+          },
+          "name": "AuthStore@1",
+          "target": [Circular],
+          "values": Map {
+            "user" => null,
+            "isLogged" => undefined,
+            "checkAuth" => undefined,
+          },
+        },
+      },
+      "CompanyStore": CompanyStore {
+        "company": null,
+        "createCompany": [Function],
+        "userStore": AuthStore {
+          "createUser": [Function],
+          "dummyId": [Function],
+          "idUser": null,
+          "isLogged": undefined,
+          "user": null,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "AuthStore@1.keys",
+              "observers": Set {},
+            },
+            "name": "AuthStore@1",
+            "target": [Circular],
+            "values": Map {
+              "user" => null,
+              "isLogged" => undefined,
+              "checkAuth" => undefined,
+            },
+          },
+        },
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "CompanyStore@4.keys",
+            "observers": Set {},
+          },
+          "name": "CompanyStore@4",
+          "target": [Circular],
+          "values": Map {
+            "company" => null,
+          },
+        },
+      },
+      "ConfigStore": ConfigStore {
+        "animationType": "fade",
+        "menuOpened": false,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "ConfigStore@3.keys",
+            "observers": Set {},
+          },
+          "name": "ConfigStore@3",
+          "target": [Circular],
+          "values": Map {
+            "menuOpened" => false,
+            "animationType" => "fade",
+          },
+        },
+      },
+      "QuotationStore": QuotationStore {
+        "userStore": AuthStore {
+          "createUser": [Function],
+          "dummyId": [Function],
+          "idUser": null,
+          "isLogged": undefined,
+          "user": null,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "AuthStore@1.keys",
+              "observers": Set {},
+            },
+            "name": "AuthStore@1",
+            "target": [Circular],
+            "values": Map {
+              "user" => null,
+              "isLogged" => undefined,
+              "checkAuth" => undefined,
+            },
+          },
+        },
+      },
+    },
+    "ref": [Function],
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "AuthStore": AuthStore {
+          "createUser": [Function],
+          "dummyId": [Function],
+          "idUser": null,
+          "isLogged": undefined,
+          "user": null,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "AuthStore@1.keys",
+              "observers": Set {},
+            },
+            "name": "AuthStore@1",
+            "target": [Circular],
+            "values": Map {
+              "user" => null,
+              "isLogged" => undefined,
+              "checkAuth" => undefined,
+            },
+          },
+        },
+        "CompanyStore": CompanyStore {
+          "company": null,
+          "createCompany": [Function],
+          "userStore": AuthStore {
+            "createUser": [Function],
+            "dummyId": [Function],
+            "idUser": null,
+            "isLogged": undefined,
+            "user": null,
+            Symbol(mobx did run lazy initializers): true,
+            Symbol(mobx administration): ObservableObjectAdministration$$1 {
+              "defaultEnhancer": [Function],
+              "keysAtom": Atom$$1 {
+                "diffValue": 0,
+                "isBeingObserved": false,
+                "isPendingUnobservation": false,
+                "lastAccessedBy": 0,
+                "lowestObserverState": 2,
+                "name": "AuthStore@1.keys",
+                "observers": Set {},
+              },
+              "name": "AuthStore@1",
+              "target": [Circular],
+              "values": Map {
+                "user" => null,
+                "isLogged" => undefined,
+                "checkAuth" => undefined,
+              },
+            },
+          },
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "CompanyStore@4.keys",
+              "observers": Set {},
+            },
+            "name": "CompanyStore@4",
+            "target": [Circular],
+            "values": Map {
+              "company" => null,
+            },
+          },
+        },
+        "ConfigStore": ConfigStore {
+          "animationType": "fade",
+          "menuOpened": false,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "ConfigStore@3.keys",
+              "observers": Set {},
+            },
+            "name": "ConfigStore@3",
+            "target": [Circular],
+            "values": Map {
+              "menuOpened" => false,
+              "animationType" => "fade",
+            },
+          },
+        },
+        "QuotationStore": QuotationStore {
+          "userStore": AuthStore {
+            "createUser": [Function],
+            "dummyId": [Function],
+            "idUser": null,
+            "isLogged": undefined,
+            "user": null,
+            Symbol(mobx did run lazy initializers): true,
+            Symbol(mobx administration): ObservableObjectAdministration$$1 {
+              "defaultEnhancer": [Function],
+              "keysAtom": Atom$$1 {
+                "diffValue": 0,
+                "isBeingObserved": false,
+                "isPendingUnobservation": false,
+                "lastAccessedBy": 0,
+                "lowestObserverState": 2,
+                "name": "AuthStore@1.keys",
+                "observers": Set {},
+              },
+              "name": "AuthStore@1",
+              "target": [Circular],
+              "values": Map {
+                "user" => null,
+                "isLogged" => undefined,
+                "checkAuth" => undefined,
+              },
+            },
+          },
+        },
+      },
+      "ref": [Function],
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "childContextTypes": Object {
+      "router": [Function],
+    },
+    "context": Object {
+      "router": Object {
+        "history": Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        },
+        "route": Object {
+          "location": Object {},
+          "match": Object {},
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Component: Cnpj Cnpj renders with default props 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <inject-Cnpj-with-ConfigStore-CompanyStore
+    AuthStore={
+      AuthStore {
+        "createUser": [Function],
+        "dummyId": [Function],
+        "idUser": null,
+        "isLogged": undefined,
+        "user": null,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "AuthStore@1.keys",
+            "observers": Set {},
+          },
+          "name": "AuthStore@1",
+          "target": [Circular],
+          "values": Map {
+            "user" => null,
+            "isLogged" => undefined,
+            "checkAuth" => undefined,
+          },
+        },
+      }
+    }
+    CompanyStore={
+      CompanyStore {
+        "company": null,
+        "createCompany": [Function],
+        "userStore": AuthStore {
+          "createUser": [Function],
+          "dummyId": [Function],
+          "idUser": null,
+          "isLogged": undefined,
+          "user": null,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "AuthStore@1.keys",
+              "observers": Set {},
+            },
+            "name": "AuthStore@1",
+            "target": [Circular],
+            "values": Map {
+              "user" => null,
+              "isLogged" => undefined,
+              "checkAuth" => undefined,
+            },
+          },
+        },
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "CompanyStore@4.keys",
+            "observers": Set {},
+          },
+          "name": "CompanyStore@4",
+          "target": [Circular],
+          "values": Map {
+            "company" => null,
+          },
+        },
+      }
+    }
+    ConfigStore={
+      ConfigStore {
+        "animationType": "fade",
+        "menuOpened": false,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "ConfigStore@3.keys",
+            "observers": Set {},
+          },
+          "name": "ConfigStore@3",
+          "target": [Circular],
+          "values": Map {
+            "menuOpened" => false,
+            "animationType" => "fade",
+          },
+        },
+      }
+    }
+    QuotationStore={
+      QuotationStore {
+        "userStore": AuthStore {
+          "createUser": [Function],
+          "dummyId": [Function],
+          "idUser": null,
+          "isLogged": undefined,
+          "user": null,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "AuthStore@1.keys",
+              "observers": Set {},
+            },
+            "name": "AuthStore@1",
+            "target": [Circular],
+            "values": Map {
+              "user" => null,
+              "isLogged" => undefined,
+              "checkAuth" => undefined,
+            },
+          },
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "AuthStore": AuthStore {
+        "createUser": [Function],
+        "dummyId": [Function],
+        "idUser": null,
+        "isLogged": undefined,
+        "user": null,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "AuthStore@1.keys",
+            "observers": Set {},
+          },
+          "name": "AuthStore@1",
+          "target": [Circular],
+          "values": Map {
+            "user" => null,
+            "isLogged" => undefined,
+            "checkAuth" => undefined,
+          },
+        },
+      },
+      "CompanyStore": CompanyStore {
+        "company": null,
+        "createCompany": [Function],
+        "userStore": AuthStore {
+          "createUser": [Function],
+          "dummyId": [Function],
+          "idUser": null,
+          "isLogged": undefined,
+          "user": null,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "AuthStore@1.keys",
+              "observers": Set {},
+            },
+            "name": "AuthStore@1",
+            "target": [Circular],
+            "values": Map {
+              "user" => null,
+              "isLogged" => undefined,
+              "checkAuth" => undefined,
+            },
+          },
+        },
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "CompanyStore@4.keys",
+            "observers": Set {},
+          },
+          "name": "CompanyStore@4",
+          "target": [Circular],
+          "values": Map {
+            "company" => null,
+          },
+        },
+      },
+      "ConfigStore": ConfigStore {
+        "animationType": "fade",
+        "menuOpened": false,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "ConfigStore@3.keys",
+            "observers": Set {},
+          },
+          "name": "ConfigStore@3",
+          "target": [Circular],
+          "values": Map {
+            "menuOpened" => false,
+            "animationType" => "fade",
+          },
+        },
+      },
+      "QuotationStore": QuotationStore {
+        "userStore": AuthStore {
+          "createUser": [Function],
+          "dummyId": [Function],
+          "idUser": null,
+          "isLogged": undefined,
+          "user": null,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "AuthStore@1.keys",
+              "observers": Set {},
+            },
+            "name": "AuthStore@1",
+            "target": [Circular],
+            "values": Map {
+              "user" => null,
+              "isLogged" => undefined,
+              "checkAuth" => undefined,
+            },
+          },
+        },
+      },
+    },
+    "ref": [Function],
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "AuthStore": AuthStore {
+          "createUser": [Function],
+          "dummyId": [Function],
+          "idUser": null,
+          "isLogged": undefined,
+          "user": null,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "AuthStore@1.keys",
+              "observers": Set {},
+            },
+            "name": "AuthStore@1",
+            "target": [Circular],
+            "values": Map {
+              "user" => null,
+              "isLogged" => undefined,
+              "checkAuth" => undefined,
+            },
+          },
+        },
+        "CompanyStore": CompanyStore {
+          "company": null,
+          "createCompany": [Function],
+          "userStore": AuthStore {
+            "createUser": [Function],
+            "dummyId": [Function],
+            "idUser": null,
+            "isLogged": undefined,
+            "user": null,
+            Symbol(mobx did run lazy initializers): true,
+            Symbol(mobx administration): ObservableObjectAdministration$$1 {
+              "defaultEnhancer": [Function],
+              "keysAtom": Atom$$1 {
+                "diffValue": 0,
+                "isBeingObserved": false,
+                "isPendingUnobservation": false,
+                "lastAccessedBy": 0,
+                "lowestObserverState": 2,
+                "name": "AuthStore@1.keys",
+                "observers": Set {},
+              },
+              "name": "AuthStore@1",
+              "target": [Circular],
+              "values": Map {
+                "user" => null,
+                "isLogged" => undefined,
+                "checkAuth" => undefined,
+              },
+            },
+          },
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "CompanyStore@4.keys",
+              "observers": Set {},
+            },
+            "name": "CompanyStore@4",
+            "target": [Circular],
+            "values": Map {
+              "company" => null,
+            },
+          },
+        },
+        "ConfigStore": ConfigStore {
+          "animationType": "fade",
+          "menuOpened": false,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "ConfigStore@3.keys",
+              "observers": Set {},
+            },
+            "name": "ConfigStore@3",
+            "target": [Circular],
+            "values": Map {
+              "menuOpened" => false,
+              "animationType" => "fade",
+            },
+          },
+        },
+        "QuotationStore": QuotationStore {
+          "userStore": AuthStore {
+            "createUser": [Function],
+            "dummyId": [Function],
+            "idUser": null,
+            "isLogged": undefined,
+            "user": null,
+            Symbol(mobx did run lazy initializers): true,
+            Symbol(mobx administration): ObservableObjectAdministration$$1 {
+              "defaultEnhancer": [Function],
+              "keysAtom": Atom$$1 {
+                "diffValue": 0,
+                "isBeingObserved": false,
+                "isPendingUnobservation": false,
+                "lastAccessedBy": 0,
+                "lowestObserverState": 2,
+                "name": "AuthStore@1.keys",
+                "observers": Set {},
+              },
+              "name": "AuthStore@1",
+              "target": [Circular],
+              "values": Map {
+                "user" => null,
+                "isLogged" => undefined,
+                "checkAuth" => undefined,
+              },
+            },
+          },
+        },
+      },
+      "ref": [Function],
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "childContextTypes": Object {
+      "router": [Function],
+    },
+    "context": Object {
+      "router": Object {
+        "history": Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        },
+        "route": Object {
+          "location": Object {},
+          "match": Object {},
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Component: Home Home renders with default props 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <withRouter(inject-Home-with-ConfigStore-AuthStore)
+    AuthStore={
+      AuthStore {
+        "createUser": [Function],
+        "dummyId": [Function],
+        "idUser": null,
+        "isLogged": undefined,
+        "user": null,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "AuthStore@1.keys",
+            "observers": Set {},
+          },
+          "name": "AuthStore@1",
+          "target": [Circular],
+          "values": Map {
+            "user" => null,
+            "isLogged" => undefined,
+            "checkAuth" => undefined,
+          },
+        },
+      }
+    }
+    CompanyStore={
+      CompanyStore {
+        "company": null,
+        "createCompany": [Function],
+        "userStore": AuthStore {
+          "createUser": [Function],
+          "dummyId": [Function],
+          "idUser": null,
+          "isLogged": undefined,
+          "user": null,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "AuthStore@1.keys",
+              "observers": Set {},
+            },
+            "name": "AuthStore@1",
+            "target": [Circular],
+            "values": Map {
+              "user" => null,
+              "isLogged" => undefined,
+              "checkAuth" => undefined,
+            },
+          },
+        },
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "CompanyStore@4.keys",
+            "observers": Set {},
+          },
+          "name": "CompanyStore@4",
+          "target": [Circular],
+          "values": Map {
+            "company" => null,
+          },
+        },
+      }
+    }
+    ConfigStore={
+      ConfigStore {
+        "animationType": "fade",
+        "menuOpened": false,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "ConfigStore@3.keys",
+            "observers": Set {},
+          },
+          "name": "ConfigStore@3",
+          "target": [Circular],
+          "values": Map {
+            "menuOpened" => false,
+            "animationType" => "fade",
+          },
+        },
+      }
+    }
+    QuotationStore={
+      QuotationStore {
+        "userStore": AuthStore {
+          "createUser": [Function],
+          "dummyId": [Function],
+          "idUser": null,
+          "isLogged": undefined,
+          "user": null,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "AuthStore@1.keys",
+              "observers": Set {},
+            },
+            "name": "AuthStore@1",
+            "target": [Circular],
+            "values": Map {
+              "user" => null,
+              "isLogged" => undefined,
+              "checkAuth" => undefined,
+            },
+          },
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": [Function],
+    },
+    "ref": null,
+    "rendered": [Function],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": [Function],
+      },
+      "ref": null,
+      "rendered": [Function],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "childContextTypes": Object {
+      "router": [Function],
+    },
+    "context": Object {
+      "router": Object {
+        "history": Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        },
+        "route": Object {
+          "location": Object {},
+          "match": Object {},
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Component: Menu Menu renders with default props 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <withRouter(inject-Menu-with-ConfigStore-AuthStore)
+    AuthStore={
+      AuthStore {
+        "createUser": [Function],
+        "dummyId": [Function],
+        "idUser": null,
+        "isLogged": undefined,
+        "user": null,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "AuthStore@1.keys",
+            "observers": Set {},
+          },
+          "name": "AuthStore@1",
+          "target": [Circular],
+          "values": Map {
+            "user" => null,
+            "isLogged" => undefined,
+            "checkAuth" => undefined,
+          },
+        },
+      }
+    }
+    CompanyStore={
+      CompanyStore {
+        "company": null,
+        "createCompany": [Function],
+        "userStore": AuthStore {
+          "createUser": [Function],
+          "dummyId": [Function],
+          "idUser": null,
+          "isLogged": undefined,
+          "user": null,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "AuthStore@1.keys",
+              "observers": Set {},
+            },
+            "name": "AuthStore@1",
+            "target": [Circular],
+            "values": Map {
+              "user" => null,
+              "isLogged" => undefined,
+              "checkAuth" => undefined,
+            },
+          },
+        },
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "CompanyStore@4.keys",
+            "observers": Set {},
+          },
+          "name": "CompanyStore@4",
+          "target": [Circular],
+          "values": Map {
+            "company" => null,
+          },
+        },
+      }
+    }
+    ConfigStore={
+      ConfigStore {
+        "animationType": "fade",
+        "menuOpened": false,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "ConfigStore@3.keys",
+            "observers": Set {},
+          },
+          "name": "ConfigStore@3",
+          "target": [Circular],
+          "values": Map {
+            "menuOpened" => false,
+            "animationType" => "fade",
+          },
+        },
+      }
+    }
+    QuotationStore={
+      QuotationStore {
+        "userStore": AuthStore {
+          "createUser": [Function],
+          "dummyId": [Function],
+          "idUser": null,
+          "isLogged": undefined,
+          "user": null,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "AuthStore@1.keys",
+              "observers": Set {},
+            },
+            "name": "AuthStore@1",
+            "target": [Circular],
+            "values": Map {
+              "user" => null,
+              "isLogged" => undefined,
+              "checkAuth" => undefined,
+            },
+          },
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": [Function],
+    },
+    "ref": null,
+    "rendered": [Function],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": [Function],
+      },
+      "ref": null,
+      "rendered": [Function],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "childContextTypes": Object {
+      "router": [Function],
+    },
+    "context": Object {
+      "router": Object {
+        "history": Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        },
+        "route": Object {
+          "location": Object {},
+          "match": Object {},
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Component: MyButton MyButton renders with default props 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <myButton
+    AuthStore={
+      AuthStore {
+        "createUser": [Function],
+        "dummyId": [Function],
+        "idUser": null,
+        "isLogged": undefined,
+        "user": null,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "AuthStore@1.keys",
+            "observers": Set {},
+          },
+          "name": "AuthStore@1",
+          "target": [Circular],
+          "values": Map {
+            "user" => null,
+            "isLogged" => undefined,
+            "checkAuth" => undefined,
+          },
+        },
+      }
+    }
+    CompanyStore={
+      CompanyStore {
+        "company": null,
+        "createCompany": [Function],
+        "userStore": AuthStore {
+          "createUser": [Function],
+          "dummyId": [Function],
+          "idUser": null,
+          "isLogged": undefined,
+          "user": null,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "AuthStore@1.keys",
+              "observers": Set {},
+            },
+            "name": "AuthStore@1",
+            "target": [Circular],
+            "values": Map {
+              "user" => null,
+              "isLogged" => undefined,
+              "checkAuth" => undefined,
+            },
+          },
+        },
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "CompanyStore@4.keys",
+            "observers": Set {},
+          },
+          "name": "CompanyStore@4",
+          "target": [Circular],
+          "values": Map {
+            "company" => null,
+          },
+        },
+      }
+    }
+    ConfigStore={
+      ConfigStore {
+        "animationType": "fade",
+        "menuOpened": false,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "ConfigStore@3.keys",
+            "observers": Set {},
+          },
+          "name": "ConfigStore@3",
+          "target": [Circular],
+          "values": Map {
+            "menuOpened" => false,
+            "animationType" => "fade",
+          },
+        },
+      }
+    }
+    QuotationStore={
+      QuotationStore {
+        "userStore": AuthStore {
+          "createUser": [Function],
+          "dummyId": [Function],
+          "idUser": null,
+          "isLogged": undefined,
+          "user": null,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "AuthStore@1.keys",
+              "observers": Set {},
+            },
+            "name": "AuthStore@1",
+            "target": [Circular],
+            "values": Map {
+              "user" => null,
+              "isLogged" => undefined,
+              "checkAuth" => undefined,
+            },
+          },
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <Icon>
+        help_outline
+      </Icon>,
+      "className": "my-button undefined",
+      "onClick": [Function],
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": "help_outline",
+      },
+      "ref": null,
+      "rendered": "help_outline",
+      "type": [Function],
+    },
+    "type": "span",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <Icon>
+          help_outline
+        </Icon>,
+        "className": "my-button undefined",
+        "onClick": [Function],
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "help_outline",
+        },
+        "ref": null,
+        "rendered": "help_outline",
+        "type": [Function],
+      },
+      "type": "span",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "childContextTypes": Object {
+      "router": [Function],
+    },
+    "context": Object {
+      "router": Object {
+        "history": Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        },
+        "route": Object {
+          "location": Object {},
+          "match": Object {},
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Component: PageShell PageShell renders with default props 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PageShell
+    AuthStore={
+      AuthStore {
+        "createUser": [Function],
+        "dummyId": [Function],
+        "idUser": null,
+        "isLogged": undefined,
+        "user": null,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "AuthStore@1.keys",
+            "observers": Set {},
+          },
+          "name": "AuthStore@1",
+          "target": [Circular],
+          "values": Map {
+            "user" => null,
+            "isLogged" => undefined,
+            "checkAuth" => undefined,
+          },
+        },
+      }
+    }
+    CompanyStore={
+      CompanyStore {
+        "company": null,
+        "createCompany": [Function],
+        "userStore": AuthStore {
+          "createUser": [Function],
+          "dummyId": [Function],
+          "idUser": null,
+          "isLogged": undefined,
+          "user": null,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "AuthStore@1.keys",
+              "observers": Set {},
+            },
+            "name": "AuthStore@1",
+            "target": [Circular],
+            "values": Map {
+              "user" => null,
+              "isLogged" => undefined,
+              "checkAuth" => undefined,
+            },
+          },
+        },
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "CompanyStore@4.keys",
+            "observers": Set {},
+          },
+          "name": "CompanyStore@4",
+          "target": [Circular],
+          "values": Map {
+            "company" => null,
+          },
+        },
+      }
+    }
+    ConfigStore={
+      ConfigStore {
+        "animationType": "fade",
+        "menuOpened": false,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "ConfigStore@3.keys",
+            "observers": Set {},
+          },
+          "name": "ConfigStore@3",
+          "target": [Circular],
+          "values": Map {
+            "menuOpened" => false,
+            "animationType" => "fade",
+          },
+        },
+      }
+    }
+    QuotationStore={
+      QuotationStore {
+        "userStore": AuthStore {
+          "createUser": [Function],
+          "dummyId": [Function],
+          "idUser": null,
+          "isLogged": undefined,
+          "user": null,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "AuthStore@1.keys",
+              "observers": Set {},
+            },
+            "name": "AuthStore@1",
+            "target": [Circular],
+            "values": Map {
+              "user" => null,
+              "isLogged" => undefined,
+              "checkAuth" => undefined,
+            },
+          },
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): [Function],
+  Symbol(enzyme.__nodes__): Array [
+    [Function],
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "childContextTypes": Object {
+      "router": [Function],
+    },
+    "context": Object {
+      "router": Object {
+        "history": Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        },
+        "route": Object {
+          "location": Object {},
+          "match": Object {},
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Component: Quotation Quotation renders with default props 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <withRouter(inject-Quotation-with-ConfigStore-CompanyStore-AuthStore)
+    AuthStore={
+      AuthStore {
+        "createUser": [Function],
+        "dummyId": [Function],
+        "idUser": null,
+        "isLogged": undefined,
+        "user": null,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "AuthStore@1.keys",
+            "observers": Set {},
+          },
+          "name": "AuthStore@1",
+          "target": [Circular],
+          "values": Map {
+            "user" => null,
+            "isLogged" => undefined,
+            "checkAuth" => undefined,
+          },
+        },
+      }
+    }
+    CompanyStore={
+      CompanyStore {
+        "company": null,
+        "createCompany": [Function],
+        "userStore": AuthStore {
+          "createUser": [Function],
+          "dummyId": [Function],
+          "idUser": null,
+          "isLogged": undefined,
+          "user": null,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "AuthStore@1.keys",
+              "observers": Set {},
+            },
+            "name": "AuthStore@1",
+            "target": [Circular],
+            "values": Map {
+              "user" => null,
+              "isLogged" => undefined,
+              "checkAuth" => undefined,
+            },
+          },
+        },
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "CompanyStore@4.keys",
+            "observers": Set {},
+          },
+          "name": "CompanyStore@4",
+          "target": [Circular],
+          "values": Map {
+            "company" => null,
+          },
+        },
+      }
+    }
+    ConfigStore={
+      ConfigStore {
+        "animationType": "fade",
+        "menuOpened": false,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "ConfigStore@3.keys",
+            "observers": Set {},
+          },
+          "name": "ConfigStore@3",
+          "target": [Circular],
+          "values": Map {
+            "menuOpened" => false,
+            "animationType" => "fade",
+          },
+        },
+      }
+    }
+    QuotationStore={
+      QuotationStore {
+        "userStore": AuthStore {
+          "createUser": [Function],
+          "dummyId": [Function],
+          "idUser": null,
+          "isLogged": undefined,
+          "user": null,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "AuthStore@1.keys",
+              "observers": Set {},
+            },
+            "name": "AuthStore@1",
+            "target": [Circular],
+            "values": Map {
+              "user" => null,
+              "isLogged" => undefined,
+              "checkAuth" => undefined,
+            },
+          },
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "children": [Function],
+    },
+    "ref": null,
+    "rendered": [Function],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": [Function],
+      },
+      "ref": null,
+      "rendered": [Function],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "childContextTypes": Object {
+      "router": [Function],
+    },
+    "context": Object {
+      "router": Object {
+        "history": Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        },
+        "route": Object {
+          "location": Object {},
+          "match": Object {},
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Component: UserPicture UserPicture renders with default props 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <UserPicture
+    AuthStore={
+      AuthStore {
+        "createUser": [Function],
+        "dummyId": [Function],
+        "idUser": null,
+        "isLogged": undefined,
+        "user": null,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "AuthStore@1.keys",
+            "observers": Set {},
+          },
+          "name": "AuthStore@1",
+          "target": [Circular],
+          "values": Map {
+            "user" => null,
+            "isLogged" => undefined,
+            "checkAuth" => undefined,
+          },
+        },
+      }
+    }
+    CompanyStore={
+      CompanyStore {
+        "company": null,
+        "createCompany": [Function],
+        "userStore": AuthStore {
+          "createUser": [Function],
+          "dummyId": [Function],
+          "idUser": null,
+          "isLogged": undefined,
+          "user": null,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "AuthStore@1.keys",
+              "observers": Set {},
+            },
+            "name": "AuthStore@1",
+            "target": [Circular],
+            "values": Map {
+              "user" => null,
+              "isLogged" => undefined,
+              "checkAuth" => undefined,
+            },
+          },
+        },
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "CompanyStore@4.keys",
+            "observers": Set {},
+          },
+          "name": "CompanyStore@4",
+          "target": [Circular],
+          "values": Map {
+            "company" => null,
+          },
+        },
+      }
+    }
+    ConfigStore={
+      ConfigStore {
+        "animationType": "fade",
+        "menuOpened": false,
+        Symbol(mobx did run lazy initializers): true,
+        Symbol(mobx administration): ObservableObjectAdministration$$1 {
+          "defaultEnhancer": [Function],
+          "keysAtom": Atom$$1 {
+            "diffValue": 0,
+            "isBeingObserved": false,
+            "isPendingUnobservation": false,
+            "lastAccessedBy": 0,
+            "lowestObserverState": 2,
+            "name": "ConfigStore@3.keys",
+            "observers": Set {},
+          },
+          "name": "ConfigStore@3",
+          "target": [Circular],
+          "values": Map {
+            "menuOpened" => false,
+            "animationType" => "fade",
+          },
+        },
+      }
+    }
+    QuotationStore={
+      QuotationStore {
+        "userStore": AuthStore {
+          "createUser": [Function],
+          "dummyId": [Function],
+          "idUser": null,
+          "isLogged": undefined,
+          "user": null,
+          Symbol(mobx did run lazy initializers): true,
+          Symbol(mobx administration): ObservableObjectAdministration$$1 {
+            "defaultEnhancer": [Function],
+            "keysAtom": Atom$$1 {
+              "diffValue": 0,
+              "isBeingObserved": false,
+              "isPendingUnobservation": false,
+              "lastAccessedBy": 0,
+              "lowestObserverState": 2,
+              "name": "AuthStore@1.keys",
+              "observers": Set {},
+            },
+            "name": "AuthStore@1",
+            "target": [Circular],
+            "values": Map {
+              "user" => null,
+              "isLogged" => undefined,
+              "checkAuth" => undefined,
+            },
+          },
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="picture-container"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundImage": "url(dummyAvatar.jpg)",
+          }
+        }
+      />,
+      "className": "UserPicture ",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "className": "picture-container",
+        "onClick": [Function],
+        "style": Object {
+          "backgroundImage": "url(dummyAvatar.jpg)",
+        },
+      },
+      "ref": null,
+      "rendered": null,
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="picture-container"
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundImage": "url(dummyAvatar.jpg)",
+            }
+          }
+        />,
+        "className": "UserPicture ",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "className": "picture-container",
+          "onClick": [Function],
+          "style": Object {
+            "backgroundImage": "url(dummyAvatar.jpg)",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "childContextTypes": Object {
+      "router": [Function],
+    },
+    "context": Object {
+      "router": Object {
+        "history": Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        },
+        "route": Object {
+          "location": Object {},
+          "match": Object {},
+        },
+      },
+    },
+  },
+}
+`;
