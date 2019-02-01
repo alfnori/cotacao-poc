@@ -10,17 +10,22 @@ class Company {
         this.name = company.name;
         this.cnpj = company.cnpj;
     }
+
 }
 
 class CompanyStore {
 
     userStore;
-    searched = null;
-    searchedAll = [];
+    company = null;
 
     constructor(userStore) {
         this.userStore = userStore;
     }
+
+
+    createCompany = (params) => {
+        return new Company({...params});
+    };
 
     async searchOne(datax) {
 
@@ -40,13 +45,19 @@ class CompanyStore {
         console.log('Accessing mock api via GET');
         console.log('Looking for company with CNPJ: ' + datax.cnpj);
 
-        return await axios.get('/api/v1/dummies/quote/' + cnpj,
-            {
-                headers: token ? {'Authorization' : 'ACCESS-TOKEN ' + token} : {}
+        let config = null;
+        if (token) {
+            config = {
+                headers: {'Authorization': 'ACCESS-TOKEN ' + token}
             }
+        };
+
+        return await axios.get('/api/v1/dummies/quote/' + cnpj,
+            config
         )
         .then((response) => {
-            if (!response.data) {
+            console.log('xxxxxxxxxxxxxxxxxxxxxx');console.log(response);
+            if (!response.data || !response.data.id && !response.data.error) {
                 throw new Error('No data response');
             } else if (response.data.error) {
                 throw new CustomError(response.data.error);
@@ -57,7 +68,7 @@ class CompanyStore {
             console.log('mocked data recovery');
             console.log(data);
             let company = new Company(data.data);
-            instance.searched = company;
+            instance.company = company;
             console.log('Company info is');
             console.log(company);
             return company;
@@ -69,35 +80,17 @@ class CompanyStore {
                 console.log('Code: ' + error.code);
                 console.log('Tag: ' + error.tag);
             }
-            instance.searched = null;
+            instance.company = null;
             return error;
         });
-
-    }
-
-    searchAll(data) {
-
-        let dummyCompanies= [];
-
-        if (data.id) {
-            dummyCompanies = fakeData.companies.filter(x => x.id === data.id)
-        } else {
-            dummyCompanies = fakeData.companies.filter(x => x.name === (data.name || data))
-        }
-
-        this.searchAll(dummyCompanies);
-
-        return dummyCompanies;
 
     }
 
 }
 
 decorate(CompanyStore, {
-    searched : observable,
-    searchedAll : observable,
-    searchOne: action,
-    searchAll: action
+    company : observable,
+    searchOne: action
 });
 
 export default CompanyStore;

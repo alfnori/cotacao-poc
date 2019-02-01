@@ -19,7 +19,8 @@ class User {
  */
 class AuthStore {
 
-    user;
+    dummyId = null;
+    user = null;
     isLogged;
 
     constructor() {
@@ -32,22 +33,33 @@ class AuthStore {
 
     }
 
+    dummyId = () => {
+        let id = Math.floor(Math.random() * 2) + 1;
+        this.dummyId = id;
+        return id;
+    };
+
+    createUser = (params) => {
+        return new User({...params});
+    };
+
     /**
      * Do user login and change this.user
      * @param data
      * @return {Promise.<void>}
      */
-    doFakeLogin() {
+    async doFakeLogin() {
 
-        let dummyId = Math.floor(Math.random() * 2) + 1;
+        let dummyId = this.dummyId();
+        let instance = this;
 
         let id = encodeURIComponent(dummyId);
         console.log('Accessing mock api via GET');
         console.log('Looking for user with ID: ' + dummyId);
 
-        axios.get('/api/v1/dummies/user/' + id)
+        await axios.get('/api/v1/dummies/user/' + id)
             .then((response) => {
-                if (!response.data) {
+                if (!response.data || !response.data.id && !response.data.error) {
                     throw new Error('No data response');
                 } else if (response.data.error) {
                     throw new CustomError(response.data.error);
@@ -69,6 +81,7 @@ class AuthStore {
                 // handle error
                 console.log('mocked failed');
                 console.log(error);
+                instance.user = null;
                 if (error instanceof CustomError) {
                     console.log('Code: ' + error.code);
                     console.log('Tag: ' + error.tag);
@@ -84,12 +97,12 @@ class AuthStore {
      */
     getInfo(data) {
 
-        let dummyUser = {};
+        let dummyUser = null;
 
         if (data.id) {
-            dummyUser = fakeData.users.find(x => x.id === data.id)
+            dummyUser = fakeData.users.find(x => x.id === data.id) || null
         } else {
-            dummyUser = fakeData.users.find(x => x.name === (data.name || data))
+            dummyUser = fakeData.users.find(x => x.name === (data.name || data)) || null
         }
 
         return dummyUser;

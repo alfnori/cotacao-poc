@@ -52,7 +52,7 @@ const assembleResponse = (code, data, headers) => {
 //dummy api busca usuario
 const requestUserGetInfo = (datax) => {
 
-    let dummyUser = {};
+    let dummyUser = null;
 
     console.log('Object mock api with params');
     console.log(datax.params);
@@ -62,12 +62,12 @@ const requestUserGetInfo = (datax) => {
     if (data.id) {
         console.log('Get user by ID');
         console.log(data.id);
-        dummyUser = fakeData.users.find(x => parseInt(x.id) === parseInt(data.id))
+        dummyUser = fakeData.users.find(x => parseInt(x.id) === parseInt(data.id)) || null
     } else {
         let filter = data.name || data;
         console.log('Filter for search in fake data is:');
         console.log(filter);
-        dummyUser = fakeData.users.find(x => x.name === filter)
+        dummyUser = fakeData.users.find(x => x.name === filter) || null
     }
 
     console.log('Result from find in dummy data');
@@ -114,15 +114,15 @@ const requestQuoteSearch = (datax) => {
         return response;
     }
 
-    let dummyCompany = {};
+    let dummyCompany = null;
 
     if (data.id) {
-        dummyCompany = fakeData.companies.find(x => parseInt(x.id) === parseInt(data.id));
+        dummyCompany = fakeData.companies.find(x => parseInt(x.id) === parseInt(data.id)) || null;
     } else {
         let filter = data.name || data.cnpj || data;
         console.log('Filter for search in fake data is:');
         console.log(filter);
-        dummyCompany = fakeData.companies.find(x => x.name === filter || x.cnpj === filter);
+        dummyCompany = fakeData.companies.find(x => x.name === filter || x.cnpj === filter) || null;
     }
 
     console.log('Result from find in dummy data');

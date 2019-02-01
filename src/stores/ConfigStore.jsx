@@ -25,7 +25,6 @@ class ConfigStore {
 decorate(ConfigStore, {
     menuOpened : observable,
     animationType : observable,
-    urlReferrer: observable,
     closeMenu : action,
     openMenu : action
 });
